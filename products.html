@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products | Numac Healthcare portfolio</title>
+  <meta name="description" content="Browse Numac Healthcare brands across infection, gastroenterology, pain, dermatology, women’s health, and nutraceuticals. Information for healthcare professionals and patients.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap-wide header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" width="40" height="40" alt="">
+        <span class="brand-text">
+          <span class="brand-name">Numac</span>
+          <span class="brand-tag">Healthcare Pvt. Ltd.</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-sub">
+            <button type="button" class="nav-btn" aria-expanded="false" aria-haspopup="true">About</button>
+            <div class="submenu" role="region" aria-label="About links">
+              <a href="about.html">Company</a>
+              <a href="about.html#mission">Mission and vision</a>
+              <a href="csr.html">Social responsibility</a>
+              <a href="quality.html">Quality</a>
+            </div>
+          </li>
+          <li><a href="products.html" aria-current="page">Products</a></li>
+          <li><a href="manufacturers.html">Manufacturers</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <button type="button" class="tool-btn" id="contrast-toggle" aria-pressed="false">High contrast</button>
+        <button type="button" class="tool-btn" id="text-toggle" aria-pressed="false">Larger text</button>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="visually-hidden">Open menu</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="wrap-wide">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Products</li>
+          </ol>
+        </nav>
+        <p class="kicker">Portfolio</p>
+        <h1>Products for every fraternity we serve</h1>
+        <p class="lede">Filter by therapeutic area or search by brand. Pack inserts and a registered medical practitioner remain the authority for prescribing and use.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="catalogue-title">
+      <div class="wrap-wide">
+        <h2 id="catalogue-title" class="visually-hidden">Product catalogue</h2>
+        <form id="product-filters" class="filters" role="search">
+          <fieldset>
+            <legend class="visually-hidden">Filter by category</legend>
+            <div class="filter-list">
+              <label><input type="radio" name="category" value="all" checked> <span>All</span></label>
+              <label><input type="radio" name="category" value="infection"> <span>Infection</span></label>
+              <label><input type="radio" name="category" value="gi"> <span>Gastroenterology</span></label>
+              <label><input type="radio" name="category" value="pain"> <span>Pain</span></label>
+              <label><input type="radio" name="category" value="skin"> <span>Skin and hair</span></label>
+              <label><input type="radio" name="category" value="nutra"> <span>Nutrition</span></label>
+              <label><input type="radio" name="category" value="neuro"> <span>Neuro</span></label>
+              <label><input type="radio" name="category" value="women"> <span>Women and family</span></label>
+              <label><input type="radio" name="category" value="ayurveda"> <span>Ayurveda</span></label>
+              <label><input type="radio" name="category" value="respiratory"> <span>Cough and cold</span></label>
+            </div>
+          </fieldset>
+          <div>
+            <label for="product-search" class="visually-hidden">Search products</label>
+            <input class="search" id="product-search" type="search" placeholder="Search by brand or use" autocomplete="off">
+          </div>
+        </form>
+        <p class="live" id="filter-status" aria-live="polite">26 products shown.</p>
+
+        <div class="product-grid">
+          <a class="product-card" data-product="fast grow biotin msm hair" data-category="skin" href="products/fast-grow.html">
+            <div class="product-pack"><img src="assets/products/fast-grow.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Hair care</span><h3>FAST GROW Tablets</h3><p class="muted">Nutritional support for hair as advised by a clinician.</p></div>
+          </a>
+          <a class="product-card" data-product="lulinum luliconazole cream fungal" data-category="skin" href="products/lulinum.html">
+            <div class="product-pack"><img src="assets/products/lulinum.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Antifungal</span><h3>Lulinum Cream</h3><p class="muted">Topical treatment of dermatophyte infections as prescribed.</p></div>
+          </a>
+          <a class="product-card" data-product="terbinum terbinafine cream" data-category="skin" href="products/terbinum.html">
+            <div class="product-pack"><img src="assets/products/terbinum.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Antifungal</span><h3>Terbinum Cream</h3><p class="muted">Topical antifungal as prescribed for susceptible skin infections.</p></div>
+          </a>
+          <a class="product-card" data-product="momenum mometasone furoate cream" data-category="skin" href="products/momenum.html">
+            <div class="product-pack"><img src="assets/products/momenum.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Dermatology</span><h3>Momenum Cream</h3><p class="muted">Topical corticosteroid for steroid-responsive dermatoses as prescribed.</p></div>
+          </a>
+          <a class="product-card" data-product="nhc-pmt permethrin soap scabies" data-category="skin" href="products/nhc-pmt.html">
+            <div class="product-pack"><img src="assets/products/nhc-pmt.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Dermatology</span><h3>NHC-PMT Soap</h3><p class="muted">External use only.</p></div>
+          </a>
+          <a class="product-card" data-product="macflu fluconazole 150" data-category="infection" href="products/macflu-150.html">
+            <div class="product-pack"><img src="assets/products/macflu-150.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Antifungal</span><h3>Macflu-150</h3><p class="muted">Oral antifungal as prescribed.</p></div>
+          </a>
+          <a class="product-card" data-product="cefunum cefuroxime 500 antibiotic" data-category="infection" href="products/cefunum-500.html">
+            <div class="product-pack"><img src="assets/products/cefunum-500.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Antibiotic</span><h3>Cefunum-500</h3><p class="muted">Oral cephalosporin for susceptible bacterial infections.</p></div>
+          </a>
+          <a class="product-card" data-product="nhfero faropenem clavulanate" data-category="infection" href="products/nhfero-cv.html">
+            <div class="product-pack"><img src="assets/products/nhfero-cv.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Antibiotic</span><h3>NHFERO-CV</h3><p class="muted">Oral penem with beta-lactamase inhibitor as prescribed.</p></div>
+          </a>
+          <a class="product-card" data-product="nhclin clindamycin injection 600" data-category="infection" href="products/nhclin-600.html">
+            <div class="product-pack"><img src="assets/products/nhclin-600.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Antibiotic</span><h3>NHCLIN-600</h3><p class="muted">For I.</p></div>
+          </a>
+          <a class="product-card" data-product="numal-rt artesunate 60 malaria rt-fal" data-category="infection" href="products/numal-rt-60.html">
+            <div class="product-pack"><img src="assets/products/numal-rt-60.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Antimalarial</span><h3>Numal-RT 60 mg</h3><p class="muted">Treatment of malaria as per national guidelines.</p></div>
+          </a>
+          <a class="product-card" data-product="numal-rt artesunate 120 malaria" data-category="infection" href="products/numal-rt-120.html">
+            <div class="product-pack"><img src="assets/products/numal-rt-120.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Antimalarial</span><h3>Numal-RT 120 mg</h3><p class="muted">Higher-strength artesunate combi pack for malaria treatment under supervision.</p></div>
+          </a>
+          <a class="product-card" data-product="numal-150 arteether malaria injection" data-category="infection" href="products/numal-150.html">
+            <div class="product-pack"><img src="assets/products/numal-150.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Antimalarial</span><h3>NUMAL-150</h3><p class="muted">Intramuscular use only for malaria as prescribed.</p></div>
+          </a>
+          <a class="product-card" data-product="panzonum dsr pantoprazole domperidone" data-category="gi" href="products/panzonum-dsr.html">
+            <div class="product-pack"><img src="assets/products/panzonum-dsr.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Gastroenterology</span><h3>Panzonum-DSR</h3><p class="muted">Acid-related disorders with a prokinetic component, as prescribed.</p></div>
+          </a>
+          <a class="product-card" data-product="mbrraft alginate bicarbonate antacid reflux" data-category="gi" href="products/mbrraft.html">
+            <div class="product-pack"><img src="assets/products/mbrraft.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Antacid</span><h3>MBRAFT Suspension</h3><p class="muted">Symptomatic relief of heartburn and reflux as labelled.</p></div>
+          </a>
+          <a class="product-card" data-product="mblac bacillus clausii probiotic" data-category="gi" href="products/mblac.html">
+            <div class="product-pack"><img src="assets/products/mblac.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Probiotic</span><h3>MBLAC</h3><p class="muted">Oral probiotic suspension.</p></div>
+          </a>
+          <a class="product-card" data-product="mbspas simethicone dill fennel drops colic" data-category="gi" href="products/mbspas.html">
+            <div class="product-pack"><img src="assets/products/mbspas.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Paediatric</span><h3>MBSPAS Drops</h3><p class="muted">Paediatric anti-flatulent drops as directed by a physician.</p></div>
+          </a>
+          <a class="product-card" data-product="abinj diclofenac sodium injection nsaid" data-category="pain" href="products/abinj.html">
+            <div class="product-pack"><img src="assets/products/abinj.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Pain</span><h3>ABINJ</h3><p class="muted">For intradeltoid, intragluteal or I.</p></div>
+          </a>
+          <a class="product-card" data-product="nhcort triamcinolone acetonide injection" data-category="pain" href="products/nhcort.html">
+            <div class="product-pack"><img src="assets/products/nhcort.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Corticosteroid</span><h3>NHCORT Injection</h3><p class="muted">For I.</p></div>
+          </a>
+          <a class="product-card" data-product="piranum piracetam injection 200" data-category="neuro" href="products/piranum-nh.html">
+            <div class="product-pack"><img src="assets/products/piranum-nh.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Neuro</span><h3>PIRANUM-NH</h3><p class="muted">Nootropic injectable used as directed by a physician.</p></div>
+          </a>
+          <a class="product-card" data-product="meconum methylcobalamin 1500 injection" data-category="neuro" href="products/meconum-injection.html">
+            <div class="product-pack"><img src="assets/products/meconum-injection.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Neuro</span><h3>MECONUM Injection</h3><p class="muted">For I.</p></div>
+          </a>
+          <a class="product-card" data-product="calcinum calcium zinc vitamin d3 magnesium mango" data-category="nutra" href="products/calcinum.html">
+            <div class="product-pack"><img src="assets/products/calcinum.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Bone health</span><h3>Calcinum Suspension</h3><p class="muted">Nutritional support for bone health as advised.</p></div>
+          </a>
+          <a class="product-card" data-product="d3 micro nano shots vitamin d3 mango" data-category="nutra" href="products/d3-micro.html">
+            <div class="product-pack"><img src="assets/products/d3-micro.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Vitamin D</span><h3>D3 Micro Nano Shots</h3><p class="muted">Vitamin D supplementation as advised by a clinician.</p></div>
+          </a>
+          <a class="product-card" data-product="grohep silymarin lecithin glutathione liver" data-category="nutra" href="products/grohep.html">
+            <div class="product-pack"><img src="assets/products/grohep.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Liver care</span><h3>GROHEP</h3><p class="muted">Hepatic nutritional support as advised.</p></div>
+          </a>
+          <a class="product-card" data-product="nutrapeg protein powder pregnancy biotin dha kesar" data-category="women" href="products/nutrapeg.html">
+            <div class="product-pack"><img src="assets/products/nutrapeg.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Family nutrition</span><h3>Nutrapeg Powder</h3><p class="muted">Nutritional drink for pregnant women, lactating mothers, growing children and elderly persons as labelled.</p></div>
+          </a>
+          <a class="product-card" data-product="platonorm papaya giloy tulsi platelet ayurvedic" data-category="ayurveda" href="products/platonorm-syrup.html">
+            <div class="product-pack"><img src="assets/products/platonorm-syrup.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Ayurveda</span><h3>Platonorm Syrup</h3><p class="muted">Traditional platelet and wellness support as per Ayurvedic labelling.</p></div>
+          </a>
+          <a class="product-card" data-product="nch-dx dextromethorphan chlorpheniramine phenylephrine cough" data-category="respiratory" href="products/nch-dx.html">
+            <div class="product-pack"><img src="assets/products/nch-dx.png" width="600" height="600" alt=""></div>
+            <div class="product-body"><span class="pill">Cough and cold</span><h3>NCH-DX Syrup</h3><p class="muted">Cough and cold syrup as prescribed.</p></div>
+          </a>
+        </div>
+
+        <aside class="notice" role="note">
+          <p><strong>Medical disclaimer.</strong> Many Numac products are prescription medicines. Do not self-medicate. Compositions listed on this site follow publicly available pharmacy data and the registered label. If they differ, the pack insert wins. This is not an online pharmacy.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap-wide">
+      <div class="footer-grid">
+        <div>
+          <h2>Numac Healthcare</h2>
+          <p>No. 20, 1st Cross, Sampige Road, Malleshwaram, Bengaluru, Karnataka 560003</p>
+          <p><a href="tel:+917869953506">+91 78699 53506</a><br>
+          <a href="mailto:numachealthcare@yahoo.com">numachealthcare@yahoo.com</a></p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="manufacturers.html">Manufacturers</a></li>
+            <li><a href="quality.html">Quality</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <ul>
+            <li><a href="csr.html">CSR</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>For professionals</h2>
+          <ul>
+            <li><a href="contact.html#hcp">Product enquiry</a></li>
+            <li><a href="manufacturers.html#partner">Become a partner</a></li>
+            <li><a href="quality.html#pv">Report an adverse event</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="disclaimer">For healthcare professionals and informed patients. Not a substitute for medical advice.</p>
+      <div class="footer-meta">
+        <p>© 2026 Numac Healthcare Private Limited. All rights reserved.</p>
+        <p>WCAG 2.2 AA-oriented</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

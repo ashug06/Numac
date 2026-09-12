@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility statement | Numac Healthcare</title>
+  <meta name="description" content="How Numac Healthcare works toward WCAG 2.2 Level AA: keyboard access, contrast, forms, and how to report barriers.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap-wide header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" width="40" height="40" alt="">
+        <span class="brand-text"><span class="brand-name">Numac</span><span class="brand-tag">Healthcare Pvt. Ltd.</span></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-sub">
+            <button type="button" class="nav-btn" aria-expanded="false" aria-haspopup="true">About</button>
+            <div class="submenu">
+              <a href="about.html">Company</a>
+              <a href="about.html#mission">Mission and vision</a>
+              <a href="csr.html">Social responsibility</a>
+              <a href="quality.html">Quality</a>
+            </div>
+          </li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="manufacturers.html">Manufacturers</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <button type="button" class="tool-btn" id="contrast-toggle" aria-pressed="false">High contrast</button>
+        <button type="button" class="tool-btn" id="text-toggle" aria-pressed="false">Larger text</button>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="visually-hidden">Open menu</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="wrap-wide">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Accessibility</li>
+          </ol>
+        </nav>
+        <p class="kicker">Inclusion</p>
+        <h1>Accessibility statement</h1>
+        <p class="lede">Numac Healthcare intends this website to meet Web Content Accessibility Guidelines (WCAG) 2.2 Level AA. Healthcare information that people cannot perceive, operate, or understand is not healthcare information.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="measures-title">
+      <div class="wrap-wide">
+        <h2 id="measures-title">What is already in place</h2>
+        <ul>
+          <li>Semantic HTML, one H1 per page, and labelled landmarks (banner, navigation, main, contentinfo).</li>
+          <li>A skip link to main content on every page.</li>
+          <li>Visible focus indicators that meet 3:1 contrast against adjacent colours.</li>
+          <li>Text and UI contrast aimed at 4.5:1 for body copy; a high-contrast mode and larger-text control that persist in your browser.</li>
+          <li>Keyboard operation for primary navigation, including Escape to close menus.</li>
+          <li>Form fields with visible labels, autocomplete where appropriate, and errors that do not rely on colour alone.</li>
+          <li>Target sizes of at least 24 by 24 CSS pixels for controls, with 44 pixel-class primary buttons.</li>
+          <li>Respect for <code>prefers-reduced-motion</code> and support for browser zoom to 200%.</li>
+          <li>Text alternatives for meaningful images; decorative graphics marked so assistive technology can ignore them.</li>
+        </ul>
+        <h2>Known limits</h2>
+        <p>Third-party fonts load from Google Fonts; if that network is blocked, system fonts remain. Enquiry forms currently confirm on the device and still need a server endpoint in production. Map links go to OpenStreetMap rather than an inaccessible unlabeled iframe.</p>
+        <h2>How to report a barrier</h2>
+        <p>Email <a href="mailto:numachealthcare@yahoo.com?subject=Website%20accessibility">numachealthcare@yahoo.com</a> with the page address, the assistive technology you use, and what you expected to happen. We treat accessibility defects as defects, not as feedback to file away.</p>
+        <h2>Conformance status</h2>
+        <p>This site is <strong>partially conformant</strong> with WCAG 2.2 AA: we designed and built to the success criteria listed above, and we welcome independent audit. Conformance is not a one-time badge.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap-wide">
+      <div class="footer-grid">
+        <div>
+          <h2>Numac Healthcare</h2>
+          <p>No. 20, 1st Cross, Sampige Road, Malleshwaram, Bengaluru, Karnataka 560003</p>
+          <p><a href="mailto:numachealthcare@yahoo.com">numachealthcare@yahoo.com</a></p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="manufacturers.html">Manufacturers</a></li>
+            <li><a href="quality.html">Quality</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <ul>
+            <li><a href="csr.html">CSR</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>For professionals</h2>
+          <ul>
+            <li><a href="contact.html#hcp">Product enquiry</a></li>
+            <li><a href="manufacturers.html#partner">Become a partner</a></li>
+            <li><a href="quality.html#pv">Report an adverse event</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p>© 2026 Numac Healthcare Private Limited. All rights reserved.</p>
+        <p>WCAG 2.2 AA-oriented</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

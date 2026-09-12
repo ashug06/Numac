@@ -1,0 +1,10 @@
+.venv
+source-photos
+scripts
+NHC-1 Nov-25.pdf
+NHC-2 Nov-25.pdf
+NHC-1 Nov-25_page*.png
+NHC-2 Nov-25_page*.png
+node_modules
+.git
+*.md
