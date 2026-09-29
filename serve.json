@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "data/**", "destination": "/404.html" },
+    { "source": "**/*.pdf", "destination": "/404.html" },
+    { "source": "scripts/**", "destination": "/404.html" }
+  ]
+}

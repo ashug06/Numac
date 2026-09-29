@@ -4,11 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Products | Numac Healthcare portfolio</title>
-  <meta name="description" content="Browse Numac Healthcare brands across infection, gastroenterology, pain, dermatology, women’s health, and nutraceuticals. Information for healthcare professionals and patients.">
+  <meta name="description" content="Browse Numac Healthcare brands across infection, gastroenterology, pain, dermatology, nutrition and related areas. Information for healthcare professionals and patients.">
+  <link rel="canonical" href="https://numachealthcare.in/products.html">
+  <meta property="og:title" content="Products | Numac Healthcare portfolio">
+  <meta property="og:description" content="Browse Numac Healthcare brands across infection, gastroenterology, pain, dermatology, nutrition and related areas. Information for healthcare professionals and patients.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://numachealthcare.in/products.html">
+  <meta property="og:image" content="https://numachealthcare.in/assets/logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Products | Numac Healthcare portfolio">
+  <meta name="twitter:description" content="Browse Numac Healthcare brands across infection, gastroenterology, pain, dermatology, nutrition and related areas. Information for healthcare professionals and patients.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -16,33 +26,34 @@
   <header class="site-header">
     <div class="wrap-wide header-inner">
       <a class="brand" href="index.html">
-        <img src="assets/logo.png" width="40" height="40" alt="">
+        <img src="assets/logo.png" width="44" height="44" alt="">
         <span class="brand-text">
           <span class="brand-name">Numac</span>
           <span class="brand-tag">Healthcare Pvt. Ltd.</span>
         </span>
       </a>
       <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <p class="nav-label">Menu</p>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="has-sub">
-            <button type="button" class="nav-btn" aria-expanded="false" aria-haspopup="true">About</button>
-            <div class="submenu" role="region" aria-label="About links">
-              <a href="about.html">Company</a>
-              <a href="about.html#mission">Mission and vision</a>
-              <a href="csr.html">Social responsibility</a>
-              <a href="quality.html">Quality</a>
-            </div>
-          </li>
+          <li><a href="about.html">About</a></li>
           <li><a href="products.html" aria-current="page">Products</a></li>
           <li><a href="manufacturers.html">Manufacturers</a></li>
           <li><a href="careers.html">Careers</a></li>
-          <li><a class="nav-cta" href="contact.html">Contact</a></li>
         </ul>
+        <a class="btn btn-solid nav-cta" href="contact.html">Contact Us</a>
+        <div class="a11y-tools" role="group" aria-label="Display preferences">
+          <button type="button" class="tool-btn" id="contrast-toggle" aria-pressed="false" title="High contrast">
+            <span class="visually-hidden">High contrast</span>
+            <span aria-hidden="true">HC</span>
+          </button>
+          <button type="button" class="tool-btn" id="text-toggle" aria-pressed="false" title="Larger text">
+            <span class="visually-hidden">Larger text</span>
+            <span aria-hidden="true">Aa</span>
+          </button>
+        </div>
       </nav>
       <div class="header-tools">
-        <button type="button" class="tool-btn" id="contrast-toggle" aria-pressed="false">High contrast</button>
-        <button type="button" class="tool-btn" id="text-toggle" aria-pressed="false">Larger text</button>
         <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
           <span class="visually-hidden">Open menu</span>
           <span class="nav-toggle-bars" aria-hidden="true"></span>
@@ -60,9 +71,9 @@
             <li>Products</li>
           </ol>
         </nav>
-        <p class="kicker">Portfolio</p>
-        <h1>Products for every fraternity we serve</h1>
-        <p class="lede">Filter by therapeutic area or search by brand. Pack inserts and a registered medical practitioner remain the authority for prescribing and use.</p>
+        <p class="kicker">Our portfolio</p>
+        <h1>Focused pharmaceutical solutions</h1>
+        <p class="lede">Explore selected products across our current therapeutic portfolio. Pack inserts and a registered medical practitioner remain the authority for prescribing and use.</p>
       </div>
     </header>
 
@@ -74,134 +85,295 @@
             <legend class="visually-hidden">Filter by category</legend>
             <div class="filter-list">
               <label><input type="radio" name="category" value="all" checked> <span>All</span></label>
-              <label><input type="radio" name="category" value="infection"> <span>Infection</span></label>
-              <label><input type="radio" name="category" value="gi"> <span>Gastroenterology</span></label>
-              <label><input type="radio" name="category" value="pain"> <span>Pain</span></label>
               <label><input type="radio" name="category" value="skin"> <span>Skin and hair</span></label>
-              <label><input type="radio" name="category" value="nutra"> <span>Nutrition</span></label>
-              <label><input type="radio" name="category" value="neuro"> <span>Neuro</span></label>
+              <label><input type="radio" name="category" value="infection"> <span>Anti-infective</span></label>
+              <label><input type="radio" name="category" value="gi"> <span>Gastroenterology</span></label>
+              <label><input type="radio" name="category" value="pain"> <span>Pain and inflammation</span></label>
+              <label><input type="radio" name="category" value="neuro"> <span>Neurology</span></label>
+              <label><input type="radio" name="category" value="nutra"> <span>Nutrition and liver care</span></label>
               <label><input type="radio" name="category" value="women"> <span>Women and family</span></label>
               <label><input type="radio" name="category" value="ayurveda"> <span>Ayurveda</span></label>
-              <label><input type="radio" name="category" value="respiratory"> <span>Cough and cold</span></label>
+              <label><input type="radio" name="category" value="respiratory"> <span>Respiratory</span></label>
             </div>
           </fieldset>
           <div>
             <label for="product-search" class="visually-hidden">Search products</label>
-            <input class="search" id="product-search" type="search" placeholder="Search by brand or use" autocomplete="off">
+            <input class="search" id="product-search" type="search" placeholder="Search by brand or composition" autocomplete="off">
           </div>
         </form>
+        <p class="catalogue-note">Browse the photographed range. Additional brands will be added when pack photography and labelling are confirmed. Category labels are working browse groups, not an official company taxonomy.</p>
         <p class="live" id="filter-status" aria-live="polite">26 products shown.</p>
 
-        <div class="product-grid">
+        <!-- catalogue-grid:start -->
+        <div class="product-grid" id="product-grid">
           <a class="product-card" data-product="fast grow biotin msm hair" data-category="skin" href="products/fast-grow.html">
-            <div class="product-pack"><img src="assets/products/fast-grow.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Hair care</span><h3>FAST GROW Tablets</h3><p class="muted">Nutritional support for hair as advised by a clinician.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/fast-grow.webp"><img src="assets/products/fast-grow.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Hair care</span>
+              <h3>FAST GROW Tablets</h3>
+              <p class="product-comp">Biotin, inositol, choline bitartrate, MSM, antioxidants, vitamins, minerals and trace elements. Vegetarian tablets.</p>
+              <p class="product-meta">Tablet · 3 x 10 tablets</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="lulinum luliconazole cream fungal" data-category="skin" href="products/lulinum.html">
-            <div class="product-pack"><img src="assets/products/lulinum.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Antifungal</span><h3>Lulinum Cream</h3><p class="muted">Topical treatment of dermatophyte infections as prescribed.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/lulinum.webp"><img src="assets/products/lulinum.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Antifungal</span>
+              <h3>Lulinum Cream</h3>
+              <p class="product-comp">Luliconazole Cream IP 1% w/w.</p>
+              <p class="product-meta">Cream · 30 g</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="terbinum terbinafine cream" data-category="skin" href="products/terbinum.html">
-            <div class="product-pack"><img src="assets/products/terbinum.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Antifungal</span><h3>Terbinum Cream</h3><p class="muted">Topical antifungal as prescribed for susceptible skin infections.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/terbinum.webp"><img src="assets/products/terbinum.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Antifungal</span>
+              <h3>Terbinum Cream</h3>
+              <p class="product-comp">Terbinafine Hydrochloride Cream IP 1%.</p>
+              <p class="product-meta">Cream · 20 g</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="momenum mometasone furoate cream" data-category="skin" href="products/momenum.html">
-            <div class="product-pack"><img src="assets/products/momenum.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Dermatology</span><h3>Momenum Cream</h3><p class="muted">Topical corticosteroid for steroid-responsive dermatoses as prescribed.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/momenum.webp"><img src="assets/products/momenum.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Dermatology</span>
+              <h3>Momenum Cream</h3>
+              <p class="product-comp">Mometasone Furoate Cream IP 0.1%.</p>
+              <p class="product-meta">Cream · 15 g</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="nhc-pmt permethrin soap scabies" data-category="skin" href="products/nhc-pmt.html">
-            <div class="product-pack"><img src="assets/products/nhc-pmt.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Dermatology</span><h3>NHC-PMT Soap</h3><p class="muted">External use only.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/nhc-pmt.webp"><img src="assets/products/nhc-pmt.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Dermatology</span>
+              <h3>NHC-PMT Soap</h3>
+              <p class="product-comp">Permethrin soap.</p>
+              <p class="product-meta">Medicated soap · 75 g bar</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="macflu fluconazole 150" data-category="infection" href="products/macflu-150.html">
-            <div class="product-pack"><img src="assets/products/macflu-150.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Antifungal</span><h3>Macflu-150</h3><p class="muted">Oral antifungal as prescribed.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/macflu-150.webp"><img src="assets/products/macflu-150.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Antifungal</span>
+              <h3>Macflu-150</h3>
+              <p class="product-comp">Fluconazole Tablets IP 150 mg.</p>
+              <p class="product-meta">Tablet · 30 x 1 tablets</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="cefunum cefuroxime 500 antibiotic" data-category="infection" href="products/cefunum-500.html">
-            <div class="product-pack"><img src="assets/products/cefunum-500.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Antibiotic</span><h3>Cefunum-500</h3><p class="muted">Oral cephalosporin for susceptible bacterial infections.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/cefunum-500.webp"><img src="assets/products/cefunum-500.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Antibiotic</span>
+              <h3>Cefunum-500</h3>
+              <p class="product-comp">Cefuroxime Tablets IP 500 mg.</p>
+              <p class="product-meta">Tablet · 10 x 10 tablets</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="nhfero faropenem clavulanate" data-category="infection" href="products/nhfero-cv.html">
-            <div class="product-pack"><img src="assets/products/nhfero-cv.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Antibiotic</span><h3>NHFERO-CV</h3><p class="muted">Oral penem with beta-lactamase inhibitor as prescribed.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/nhfero-cv.webp"><img src="assets/products/nhfero-cv.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Antibiotic</span>
+              <h3>NHFERO-CV</h3>
+              <p class="product-comp">Faropenem and potassium clavulanate tablets.</p>
+              <p class="product-meta">Tablet · 1 x 6 tablets</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="nhclin clindamycin injection 600" data-category="infection" href="products/nhclin-600.html">
-            <div class="product-pack"><img src="assets/products/nhclin-600.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Antibiotic</span><h3>NHCLIN-600</h3><p class="muted">For I.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/nhclin-600.webp"><img src="assets/products/nhclin-600.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Antibiotic</span>
+              <h3>NHCLIN-600</h3>
+              <p class="product-comp">Clindamycin Injection I.P. 600 mg / 4 ml.</p>
+              <p class="product-meta">Injection · 1 x 4 ml ampoule</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="numal-rt artesunate 60 malaria rt-fal" data-category="infection" href="products/numal-rt-60.html">
-            <div class="product-pack"><img src="assets/products/numal-rt-60.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Antimalarial</span><h3>Numal-RT 60 mg</h3><p class="muted">Treatment of malaria as per national guidelines.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/numal-rt-60.webp"><img src="assets/products/numal-rt-60.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Antimalarial</span>
+              <h3>Numal-RT 60 mg</h3>
+              <p class="product-comp">Artesunate Injection IP 60 mg.</p>
+              <p class="product-meta">Injection, combi pack · Single-use vial, IM/IV</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="numal-rt artesunate 120 malaria" data-category="infection" href="products/numal-rt-120.html">
-            <div class="product-pack"><img src="assets/products/numal-rt-120.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Antimalarial</span><h3>Numal-RT 120 mg</h3><p class="muted">Higher-strength artesunate combi pack for malaria treatment under supervision.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/numal-rt-120.webp"><img src="assets/products/numal-rt-120.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Antimalarial</span>
+              <h3>Numal-RT 120 mg</h3>
+              <p class="product-comp">Artesunate Injection IP 120 mg.</p>
+              <p class="product-meta">Injection, combi pack · Single-use vial, IM/IV</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="numal-150 arteether malaria injection" data-category="infection" href="products/numal-150.html">
-            <div class="product-pack"><img src="assets/products/numal-150.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Antimalarial</span><h3>NUMAL-150</h3><p class="muted">Intramuscular use only for malaria as prescribed.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/numal-150.webp"><img src="assets/products/numal-150.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Antimalarial</span>
+              <h3>NUMAL-150</h3>
+              <p class="product-comp">Alpha-beta arteether injection 150 mg / 2 ml.</p>
+              <p class="product-meta">Injection · 3 ampoules of 2 ml</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="panzonum dsr pantoprazole domperidone" data-category="gi" href="products/panzonum-dsr.html">
-            <div class="product-pack"><img src="assets/products/panzonum-dsr.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Gastroenterology</span><h3>Panzonum-DSR</h3><p class="muted">Acid-related disorders with a prokinetic component, as prescribed.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/panzonum-dsr.webp"><img src="assets/products/panzonum-dsr.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Gastroenterology</span>
+              <h3>Panzonum-DSR</h3>
+              <p class="product-comp">Pantoprazole gastro-resistant and domperidone prolonged-release capsules IP.</p>
+              <p class="product-meta">Capsule · 10 x 10 capsules</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="mbrraft alginate bicarbonate antacid reflux" data-category="gi" href="products/mbrraft.html">
-            <div class="product-pack"><img src="assets/products/mbrraft.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Antacid</span><h3>MBRAFT Suspension</h3><p class="muted">Symptomatic relief of heartburn and reflux as labelled.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/mbrraft.webp"><img src="assets/products/mbrraft.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Antacid</span>
+              <h3>MBRAFT Suspension</h3>
+              <p class="product-comp">Sodium alginate 250 mg, sodium bicarbonate 133.5 mg and calcium carbonate 80 mg per 5 ml suspension. Sugar-free, paan-mint flavour.</p>
+              <p class="product-meta">Oral suspension · 150 ml</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="mblac bacillus clausii probiotic" data-category="gi" href="products/mblac.html">
-            <div class="product-pack"><img src="assets/products/mblac.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Probiotic</span><h3>MBLAC</h3><p class="muted">Oral probiotic suspension.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/mblac.webp"><img src="assets/products/mblac.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Probiotic</span>
+              <h3>MBLAC</h3>
+              <p class="product-comp">Bacillus clausii spores suspension.</p>
+              <p class="product-meta">Oral mini-bottles · 12 mini bottles of 5 ml</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="mbspas simethicone dill fennel drops colic" data-category="gi" href="products/mbspas.html">
-            <div class="product-pack"><img src="assets/products/mbspas.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Paediatric</span><h3>MBSPAS Drops</h3><p class="muted">Paediatric anti-flatulent drops as directed by a physician.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/mbspas.webp"><img src="assets/products/mbspas.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Paediatric</span>
+              <h3>MBSPAS Drops</h3>
+              <p class="product-comp">Simethicone emulsion, dill oil and fennel oil oral drops.</p>
+              <p class="product-meta">Oral drops · 30 ml with dropper</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="abinj diclofenac sodium injection nsaid" data-category="pain" href="products/abinj.html">
-            <div class="product-pack"><img src="assets/products/abinj.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Pain</span><h3>ABINJ</h3><p class="muted">For intradeltoid, intragluteal or I.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/abinj.webp"><img src="assets/products/abinj.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Pain</span>
+              <h3>ABINJ</h3>
+              <p class="product-comp">Diclofenac Sodium Injection I.P.</p>
+              <p class="product-meta">Injection · 10 x 1 ml</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="nhcort triamcinolone acetonide injection" data-category="pain" href="products/nhcort.html">
-            <div class="product-pack"><img src="assets/products/nhcort.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Corticosteroid</span><h3>NHCORT Injection</h3><p class="muted">For I.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/nhcort.webp"><img src="assets/products/nhcort.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Corticosteroid</span>
+              <h3>NHCORT Injection</h3>
+              <p class="product-comp">Triamcinolone Acetonide Injection I.P. 40 mg/ml.</p>
+              <p class="product-meta">Injectable suspension · 1 ml vial</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="piranum piracetam injection 200" data-category="neuro" href="products/piranum-nh.html">
-            <div class="product-pack"><img src="assets/products/piranum-nh.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Neuro</span><h3>PIRANUM-NH</h3><p class="muted">Nootropic injectable used as directed by a physician.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/piranum-nh.webp"><img src="assets/products/piranum-nh.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Neuro</span>
+              <h3>PIRANUM-NH</h3>
+              <p class="product-comp">Piracetam IP 200 mg per ml, water for injections q.s. For IV use only.</p>
+              <p class="product-meta">IV injection · 60 ml vial</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="meconum methylcobalamin 1500 injection" data-category="neuro" href="products/meconum-injection.html">
-            <div class="product-pack"><img src="assets/products/meconum-injection.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Neuro</span><h3>MECONUM Injection</h3><p class="muted">For I.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/meconum-injection.webp"><img src="assets/products/meconum-injection.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Neuro</span>
+              <h3>MECONUM Injection</h3>
+              <p class="product-comp">Methylcobalamin Injection 1500 mcg / 1 ml.</p>
+              <p class="product-meta">Injection · 5 x 1 ml ampoules</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="calcinum calcium zinc vitamin d3 magnesium mango" data-category="nutra" href="products/calcinum.html">
-            <div class="product-pack"><img src="assets/products/calcinum.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Bone health</span><h3>Calcinum Suspension</h3><p class="muted">Nutritional support for bone health as advised.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/calcinum.webp"><img src="assets/products/calcinum.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Bone health</span>
+              <h3>Calcinum Suspension</h3>
+              <p class="product-comp">Calcium carbonate, zinc, vitamin D3 and magnesium suspension. Mango flavour.</p>
+              <p class="product-meta">Oral suspension · 200 ml</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="d3 micro nano shots vitamin d3 mango" data-category="nutra" href="products/d3-micro.html">
-            <div class="product-pack"><img src="assets/products/d3-micro.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Vitamin D</span><h3>D3 Micro Nano Shots</h3><p class="muted">Vitamin D supplementation as advised by a clinician.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/d3-micro.webp"><img src="assets/products/d3-micro.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Vitamin D</span>
+              <h3>D3 Micro Nano Shots</h3>
+              <p class="product-comp">Vitamin D3 oral solution. Sugar-free, mango flavour. Ready-to-drink nano shots.</p>
+              <p class="product-meta">Oral solution · 4 x 5 ml</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="grohep silymarin lecithin glutathione liver" data-category="nutra" href="products/grohep.html">
-            <div class="product-pack"><img src="assets/products/grohep.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Liver care</span><h3>GROHEP</h3><p class="muted">Hepatic nutritional support as advised.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/grohep.webp"><img src="assets/products/grohep.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Liver care</span>
+              <h3>GROHEP</h3>
+              <p class="product-comp">Lecithin, silymarin, vitamin B6, glutathione, choline citrate, L-ornithine L-aspartate. Sugar-free nutraceutical.</p>
+              <p class="product-meta">Syrup · 200 ml</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="nutrapeg protein powder pregnancy biotin dha kesar" data-category="women" href="products/nutrapeg.html">
-            <div class="product-pack"><img src="assets/products/nutrapeg.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Family nutrition</span><h3>Nutrapeg Powder</h3><p class="muted">Nutritional drink for pregnant women, lactating mothers, growing children and elderly persons as labelled.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/nutrapeg.webp"><img src="assets/products/nutrapeg.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Family nutrition</span>
+              <h3>Nutrapeg Powder</h3>
+              <p class="product-comp">Protein drink mix with biotin and DHA. Sugar-free. Kesar elaichi flavour. FSSAI labelled.</p>
+              <p class="product-meta">Powder · 200 g jar</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="platonorm papaya giloy tulsi platelet ayurvedic" data-category="ayurveda" href="products/platonorm-syrup.html">
-            <div class="product-pack"><img src="assets/products/platonorm-syrup.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Ayurveda</span><h3>Platonorm Syrup</h3><p class="muted">Traditional platelet and wellness support as per Ayurvedic labelling.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/platonorm-syrup.webp"><img src="assets/products/platonorm-syrup.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Ayurveda</span>
+              <h3>Platonorm Syrup</h3>
+              <p class="product-comp">Ayurvedic proprietary medicine: Carica papaya leaf, giloy, tulsi, aloe vera, kiwi extracts and goat milk powder syrup. Pineapple flavour.</p>
+              <p class="product-meta">Syrup · 200 ml</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
           <a class="product-card" data-product="nch-dx dextromethorphan chlorpheniramine phenylephrine cough" data-category="respiratory" href="products/nch-dx.html">
-            <div class="product-pack"><img src="assets/products/nch-dx.png" width="600" height="600" alt=""></div>
-            <div class="product-body"><span class="pill">Cough and cold</span><h3>NCH-DX Syrup</h3><p class="muted">Cough and cold syrup as prescribed.</p></div>
+            <div class="product-pack"><picture><source type="image/webp" srcset="assets/products/nch-dx.webp"><img src="assets/products/nch-dx.png" width="600" height="600" alt="" loading="lazy" decoding="async"></picture></div>
+            <div class="product-body">
+              <span class="product-cat">Cough and cold</span>
+              <h3>NCH-DX Syrup</h3>
+              <p class="product-comp">Each 5 ml: dextromethorphan HBr IP 15 mg, chlorpheniramine maleate IP 2 mg, phenylephrine HCl IP 5 mg. Sugar-free.</p>
+              <p class="product-meta">Syrup · As labelled, with measuring cap</p>
+              <span class="product-cta">View product</span>
+            </div>
           </a>
         </div>
+        <nav class="catalogue-pager" id="catalogue-pager" aria-label="Catalogue pages" hidden></nav>
+        <!-- catalogue-grid:end -->
 
         <aside class="notice" role="note">
-          <p><strong>Medical disclaimer.</strong> Many Numac products are prescription medicines. Do not self-medicate. Compositions listed on this site follow publicly available pharmacy data and the registered label. If they differ, the pack insert wins. This is not an online pharmacy.</p>
+          <p><strong>Medical disclaimer.</strong> Many Numac products are prescription medicines. Do not self-medicate. Compositions listed on this site follow labelled pack information where photographed, and publicly available pharmacy data where noted. If they differ, the pack insert wins. This is not an online pharmacy.</p>
         </aside>
+        <p><a class="btn btn-solid" href="contact.html#enquiry">Request product information</a></p>
       </div>
     </section>
   </main>
@@ -210,43 +382,47 @@
     <div class="wrap-wide">
       <div class="footer-grid">
         <div>
-          <h2>Numac Healthcare</h2>
-          <p>No. 20, 1st Cross, Sampige Road, Malleshwaram, Bengaluru, Karnataka 560003</p>
+          <p class="footer-brand">Numac Healthcare</p>
+          <p>A Bengaluru pharmaceutical healthcare company established in 2012. Quality-focused products through trusted manufacturing partnerships.</p>
+          <address>
+            Sampige Road,<br>
+            Malleshwaram, Bengaluru, Karnataka 560003
+          </address>
           <p><a href="tel:+917869953506">+91 78699 53506</a><br>
           <a href="mailto:numachealthcare@yahoo.com">numachealthcare@yahoo.com</a></p>
         </div>
         <div>
           <h2>Explore</h2>
           <ul>
-            <li><a href="about.html">About us</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="manufacturers.html">Manufacturers</a></li>
-            <li><a href="quality.html">Quality</a></li>
             <li><a href="careers.html">Careers</a></li>
           </ul>
         </div>
         <div>
           <h2>Company</h2>
           <ul>
-            <li><a href="csr.html">CSR</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="quality.html">Quality</a></li>
             <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="csr.html">Social responsibility</a></li>
           </ul>
         </div>
         <div>
           <h2>For professionals</h2>
           <ul>
-            <li><a href="contact.html#hcp">Product enquiry</a></li>
+            <li><a href="contact.html#enquiry">Product enquiry</a></li>
             <li><a href="manufacturers.html#partner">Become a partner</a></li>
             <li><a href="quality.html#pv">Report an adverse event</a></li>
           </ul>
         </div>
       </div>
-      <p class="disclaimer">For healthcare professionals and informed patients. Not a substitute for medical advice.</p>
+      <p class="disclaimer">Numac products are intended for use as directed by a registered medical practitioner. Product information on this website is provided for professional and informational purposes and is not a substitute for medical advice. Always refer to the pack insert. This is not an online pharmacy.</p>
       <div class="footer-meta">
         <p>© 2026 Numac Healthcare Private Limited. All rights reserved.</p>
-        <p>WCAG 2.2 AA-oriented</p>
+        <p><a href="privacy.html">Privacy</a> · <a href="accessibility.html">Accessibility</a></p>
       </div>
     </div>
   </footer>

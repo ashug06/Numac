@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /data
+Disallow: /data/
+Disallow: /scripts
+Disallow: /api
+Disallow: /*.pdf$
 
 Sitemap: https://numachealthcare.in/sitemap.xml

@@ -3,8 +3,10 @@
   "private": true,
   "description": "Public website for Numac Healthcare Pvt. Ltd.",
   "scripts": {
-    "start": "npx --yes serve -l 4173",
+    "start": "node scripts/site-server.js",
+    "build": "node scripts/write-web3-client.js",
     "products": "node scripts/build-products.js",
-    "photos": "python scripts/process-photos.py"
+    "photos": "python scripts/process-photos.py",
+    "test": "node scripts/test-enquiry.js && node scripts/check-a11y.js"
   }
 }

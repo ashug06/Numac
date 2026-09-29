@@ -5,7 +5,7 @@ function walk(dir, acc) {
   for (const name of fs.readdirSync(dir)) {
     const full = path.join(dir, name);
     const st = fs.statSync(full);
-    if (st.isDirectory() && name !== "node_modules" && name !== "scripts") {
+    if (st.isDirectory() && name !== "node_modules" && name !== "scripts" && name !== "data") {
       walk(full, acc);
     } else if (name.endsWith(".html")) {
       acc.push(full);

@@ -1,4 +1,149 @@
 {
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/data/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
+    {
+      "source": "/scripts/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    }
+  ],
+  "rewrites": [],
+  "redirects": [
+    {
+      "source": "/data/:path*",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/scripts/:path*",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/.env",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/.env.local",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/:file(.*).pdf",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/NHC-1 Nov-25.pdf",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/ovapreg.html",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/ovapreg",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/nuheal.html",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/nuheal",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/panzonum-injection.html",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/panzonum-injection",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/rabinum-d.html",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/rabinum-d",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/numcef.html",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/numcef",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/macvir.html",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/macvir",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/meconum-lg.html",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/meconum-lg",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/numal-forte.html",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/numal-forte",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/platonorm.html",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/platonorm",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/rt-fal.html",
+      "destination": "/404.html",
+      "permanent": false
+    },
+    {
+      "source": "/products/rt-fal",
+      "destination": "/404.html",
+      "permanent": false
+    }
+  ]
 }

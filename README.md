@@ -44,7 +44,7 @@ Product compositions follow publicly listed pharmacy data (for example RT-FAL ar
 
 Contact details used on the site:
 
-- No. 20, 1st Cross, Sampige Road, Malleshwaram, Bengaluru 560003
+- Sampige Road, Malleshwaram, Bengaluru, Karnataka 560003
 - +91 78699 53506
 - numachealthcare@yahoo.com
 

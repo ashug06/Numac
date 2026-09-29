@@ -1,3 +1,10 @@
 node_modules/
 .DS_Store
 Thumbs.db
+.vercel
+.env
+.env.local
+js/web3forms-access.js
+NHC-*.pdf
+*.pdf
+data/internal/

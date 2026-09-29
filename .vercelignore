@@ -1,10 +1,30 @@
 .venv
 source-photos
-scripts
+scripts/*
+!scripts/write-web3-client.js
+data
+api
+products/ovapreg.html
+products/nuheal.html
+products/panzonum-injection.html
+products/rabinum-d.html
+products/numcef.html
+products/macvir.html
+products/meconum-lg.html
+products/numal-forte.html
+products/platonorm.html
+products/rt-fal.html
+qa-out
+.tmp-hero-shots
+.tmp-marquee-qa
 NHC-1 Nov-25.pdf
 NHC-2 Nov-25.pdf
 NHC-1 Nov-25_page*.png
 NHC-2 Nov-25_page*.png
+*.pdf
 node_modules
 .git
 *.md
+.env.example
+.env
+.env.local
