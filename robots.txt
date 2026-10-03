@@ -6,4 +6,4 @@ Disallow: /scripts
 Disallow: /api
 Disallow: /*.pdf$
 
-Sitemap: https://numachealthcare.in/sitemap.xml
+Sitemap: https://numachealthcare.com/sitemap.xml

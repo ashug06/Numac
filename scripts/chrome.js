@@ -10,8 +10,8 @@ function fontLinks() {
 }
 
 function seoMeta({ title, description, path = "/", image = "assets/logo.png" }) {
-  const url = "https://numachealthcare.in" + path;
-  const absImage = image.startsWith("http") ? image : "https://numachealthcare.in/" + image.replace(/^\//, "");
+  const url = "https://numachealthcare.com" + path;
+  const absImage = image.startsWith("http") ? image : "https://numachealthcare.com/" + image.replace(/^\//, "");
   return `<link rel="canonical" href="${url}">
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${description}">
