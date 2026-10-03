@@ -135,7 +135,10 @@ function shell(p) {
   <title>${escapeHtml(p.brandName)} | Numac Healthcare</title>
   <meta name="description" content="${desc}">
   ${seoMeta({ title: p.brandName + " | Numac Healthcare", description: desc, path: "/products/" + p.id + ".html", image: "assets/products/" + webpName(p.image) })}
-  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="../assets/favicon-48.png" sizes="48x48">
   ${fontLinks()}
   <link rel="stylesheet" href="../css/styles.css">
 </head>
